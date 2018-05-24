@@ -4,9 +4,16 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
+
+// pages
 import { GeneralPageModule } from './general-page/general-page.module';
-import { IntegrationsPageComponent } from './integrations-page/integrations-page/integrations-page.component';
 import { IntegrationsPageModule } from './integrations-page/integrations-page.module';
+
+// services
+import { MenuService } from './services/menu/menu.service';
+
+// ui elements
+import { MenuModule } from './ui-elements/menu/menu.module';
 
 
 @NgModule({
@@ -16,10 +23,17 @@ import { IntegrationsPageModule } from './integrations-page/integrations-page.mo
   imports: [
     BrowserModule,
     AppRoutingModule,
+
+    // pages
     GeneralPageModule,
-    IntegrationsPageModule
+    IntegrationsPageModule,
+
+    // ui elements
+    MenuModule
   ],
-  providers: [],
+  providers: [
+    MenuService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

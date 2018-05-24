@@ -1,0 +1,10 @@
+<ul class="menu">
+  <li class="menu-item"
+    *ngFor="let item of menuItems">
+    <a
+      [routerLink]="[item.url]"
+      [routerLinkActive]="'item-active'">
+      {{item.text}}
+    </a>
+  </li>
+</ul>
