@@ -1,0 +1,35 @@
+.menu-wrapper {
+  float: left;
+  width: 20%;
+}
+
+.content-wrapper {
+  padding: 0 40px;
+  float: left;
+  width: 80%;
+  border-left: 3px solid #f26129;
+}
+
+.menu-wrapper,
+.content-wrapper {
+  transition: width .2s;
+}
+
+.menu-wrapper:after,
+.content-wrapper:after {
+  content: '';
+  position: relative;
+  display: block;
+  clear: both;
+}
+
+@media (max-width: 1200px) {
+  .menu-wrapper,
+  .content-wrapper {
+    float: none;
+    width: 100%;
+  }
+  .content-wrapper {
+    border-left: none;
+  }
+}

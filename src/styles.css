@@ -1,4 +1,6 @@
 body {
+  margin: 0;
+  padding: 0;
   font-family: sans-serif;
   font-size: 16px;
   color: #000;
@@ -8,16 +10,17 @@ body {
   box-sizing: border-box;
 }
 
-.page-title {
+.page-header {
   font-size: 25px;
+  font-weight: bold;
 }
 
 .page-content {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .page-content-section {
-  margin: 10px 0;
+  margin: 20px 0;
 }
 .page-content-section:after {
   content: '';
@@ -31,8 +34,8 @@ body {
   text-decoration: none;
 }
 .link:hover {
-  border-bottom: 1px solid #f26129;
   padding-bottom: 2px;
+  border-bottom: 1px solid #f26129;
 }
 
 .label {
@@ -40,20 +43,34 @@ body {
 }
 
 .button {
-  transition: background-color .2s;
-  background-color: #f26129;
+  padding: 10px 15px;
   color: #fff;
-  padding: 5px 10px;
-  border-radius: 4px;
+  font-size: 18px;
   outline: none;
   border: none;
+  border-radius: 4px;
+  background-color: #f26129;
+  cursor: pointer;
+  transition: background-color .2s;
 }
 .button:hover {
   background-color: #ff4400;
 }
 
 .input-field {
+  margin-top: 5px;
+  padding: 7px;
   display: block;
   border: 1px solid #ddd;
-  padding: 7px;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 100%;
+  }
 }
