@@ -1,1 +1,59 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page-title {
+  font-size: 25px;
+}
+
+.page-content {
+  font-size: 18px;
+}
+
+.page-content-section {
+  margin: 10px 0;
+}
+.page-content-section:after {
+  content: '';
+  position: relative;
+  display: block;
+  clear: both;
+}
+
+.link {
+  color: #f26129;
+  text-decoration: none;
+}
+.link:hover {
+  border-bottom: 1px solid #f26129;
+  padding-bottom: 2px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.button {
+  transition: background-color .2s;
+  background-color: #f26129;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+}
+.button:hover {
+  background-color: #ff4400;
+}
+
+.input-field {
+  display: block;
+  border: 1px solid #ddd;
+  padding: 7px;
+}
